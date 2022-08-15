@@ -1,7 +1,15 @@
-<p>-You</p>
-<%= @question %>
-<br>
-<p>-Coach</p>
-<%= @answer %>
-<br>
-<%= link_to "Ask a new answer", ask_path %>
+<div class="container">
+  <h1>Stupid coach</h1>
+  <br>
+  <div class="p-3 mb-2 bg-light text-dark shadow fs-3 w-50">
+    <p>-You</p>
+    <%= @question %>
+  </div>
+  <br>
+  <div class="p-3 mb-2 bg-light text-dark shadow fs-3 w-50">
+    <p>-Coach</p>
+    <%= @answer %>
+  </div>
+  <br>
+  <button type="button" class="btn btn-outline-primary "><%= link_to "Ask a new answer", ask_path %></button>
+</div>
